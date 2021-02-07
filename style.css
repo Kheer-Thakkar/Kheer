@@ -2,3 +2,32 @@ marquee{
     font-size: 49px;
  
 }
+
+body{
+    text-align: center;
+    
+}
+
+img{
+    width: 50%;
+}
+#achievementID{
+	padding-bottom: 10px;
+}
+
+.movie_head{
+	font-size: 20px;
+	padding: 6px 22px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	width: 100%;
+	display: inline-block;
+}
+
+.movie_head i{
+	float:right;
+}
+
+.movie_text span{
+	color: deeppink;
+}
