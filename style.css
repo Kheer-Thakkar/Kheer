@@ -1,33 +1,13 @@
-marquee{
-    font-size: 49px;
- 
-}
-
 body{
-    text-align: center;
-    
+    background-image: url("https://media1.tenor.com/images/b0c2c98830563520c8e8cc74efe2e7e5/tenor.gif?itemid=12374002");
+    background-position:center;
+    background-size: cover;
 }
 
-img{
-    width: 50%;
-}
-#achievementID{
-	padding-bottom: 10px;
-}
-
-.movie_head{
-	font-size: 20px;
-	padding: 6px 22px;
-	border-radius: 10px;
-	margin-bottom: 15px;
-	width: 100%;
-	display: inline-block;
-}
-
-.movie_head i{
-	float:right;
-}
-
-.movie_text span{
-	color: deeppink;
+#myCanvas
+{
+    margin-top: 30px;
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
 }
