@@ -1,29 +1,88 @@
-var menu_list_array= ["Greek Pizza",
-"Barbecue Pineapple, Jalapeño and Feta Pizza",
-"Part-Skim Mozzarella",
-"European cheese pizza",
-"Itlian pizza",];
+var canvas=new fabric.Canvas("myCanvas");
+ player_x=10;
+ player_y=10;
+ block_image_width=30;
+ block_image_height=30;
+ var player_object="";
+ var block_image_object="";
 
-function getmenu(){
-    var htmldata;
-    htmldata="<ol class='menulist'>"
-    menu_list_array.sort();
-    for(var i=0;i<menu_list_array.length;i++){
-        htmldata=htmldata+'<li>' +menu_list_array[i] + '</li>'
-    }
-    htmldata=htmldata+"</ol>"
-    document.getElementById("display_menu").innerHTML = htmldata;
+ function player_update(){
+    fabric.Image.fromURL("https://drive.google.com/file/d/1-hMfzjM02r_h02NDgkQk9WmFTB-ZErBt/view?usp=sharing",function(Img){
+        player_object=Img;
+        player_object.scaleToWidth(150);
+        player_object.scaleToHeight(140);
+        player_object.set({
+            top:player_y,
+            left:player_x
+        
+    });
+
+    canvas.add(player_object);
+
+});
 }
+function new_image(get_image){
+    fabric.Image.fromURL(get_image,function(Img){
+        block_image_object=Img;
+        block_image_object.scaleToWidth(block_image_width);
+        block_image_object.scaleToHeight(block_image_height);
+        block_image_object.set({
+            top:player_y,
+            left:player_x
+        
+    });
 
-function add_item(){
-    var htmldata;
-    var item =document.getElementById("add_item").Value;
-    menu_list_array.push(item);
-    menu_list_array.sort();
-    htmldata="<section class='cards'>"
-    for(var i=0;i<menu_list_array.length;i++){
-        htmldata=htmldata+ '<div class="card">' +'<img src="images/pizzaImg.png"/>' + menu_list_array[i] + '</div>'
-    }
-    htmldata=htmldata+item"</section>"
-    document.getElementById("display_addmenu").innerHTML = htmldata;
+    canvas.add(block_image_object);
+
+});
+}
+if (keyPressed == '70'){
+    new_image("https://i.postimg.cc/hGnyTPLB/ironman-face.png");
+    console.log("f");
+    
+ }
+
+ if (keyPressed == '70'){
+    new_image("https://i.postimg.cc/FscwL6M0/spiderman-body.png");
+    console.log("b");
+    
+ }
+
+ if (keyPressed == '70'){
+    new_image("https://i.postimg.cc/KzF6GDqt/hulk-legs.png");
+    console.log("l");
+    
+ }
+
+ if (keyPressed == '70'){
+    new_image("https://i.postimg.cc/8s8BGtwS/thor-right-hand.png");
+    console.log("r");
+    
+ }
+
+ if (keyPressed == '70'){
+    new_image("https://i.postimg.cc/rw7ckW29/captain-america-left-hand.png");
+    console.log("h");
+    
+ }
+
+ if (keyPressed == '38'){
+    up();
+    console.log("up");
+
+ }
+ if (keyPressed == '40'){
+   down();
+   console.log("down");
+   
+}
+if (keyPressed == '37'){
+   left();
+   console.log("left");
+   
+}
+if (keyPressed == '39'){
+   right();
+   console.log("right");
+   
 }
