@@ -1,14 +1,18 @@
-#myCanvas
+body
 {
-    border-width:10px;
-    background-color: white; 
-    border-style:ridge;
+	background: rgb(0, 191, 255);
 }
 
-.body_background 
-{
-    background-image: url("https://images.indianexpress.com/2019/04/avengers-endgame-759-23.jpg");
-    background-position: center;
-    background-size: cover;
-}
+	.login_div1 , .login_div2
+	{
+		background: rgb(253, 253, 252);
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
 
+
+
+button{
+	width: 30%;
+}
