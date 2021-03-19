@@ -1,18 +1,13 @@
-body
-{
-	background: rgb(0, 191, 255);
+body{
+    background-image: url("https://media1.tenor.com/images/b0c2c98830563520c8e8cc74efe2e7e5/tenor.gif?itemid=12374002");
+    background-position:center;
+    background-size: cover;
 }
 
-	.login_div1 , .login_div2
-	{
-		background: rgb(253, 253, 252);
-		padding: 10px;
-		float: none;
-		border-radius: 15px;
-	}
-
-
-
-button{
-	width: 30%;
+#myCanvas
+{
+    margin-top: 30px;
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
 }
